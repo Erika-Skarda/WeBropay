@@ -1,0 +1,126 @@
+openapi: 3.0.1
+info:
+  title: Swagger Contracts
+  description: >-
+    This is a sample server Contracts server.  You can find out more about
+    Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net,
+    #swagger](http://swagger.io/irc/).      For this sample, you can use the api
+    key `special-key` to test the authorization     filters.
+  termsOfService: 'http://swagger.io/terms/'
+  contact:
+    email: erikaskarda@yahoo.com.br
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+  version: 1.0.0
+servers:
+  - url: 'https://webropay.czeruqgah1kf.us-east-1.rds.amazonaws.com/'
+  - url: 'http://webropay.czeruqgah1kf.us-east-1.rds.amazonaws.com/'
+tags:
+  - name: contracts
+    description: Contracts's endpoints
+paths:
+  /contract:
+    get:
+      tags:
+        - contracts
+      summary: Finds all contracts
+      operationId: getAllContracts
+      description: Get All Contract per Page
+      parameters: 
+      - name: page
+        in: query
+        description: Choose a page
+        required: false
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: successful operation
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Contract'
+        '400':
+          description: Invalid contracts value
+          content: {}
+      x-swagger-router-controller: Contracts
+    post:
+      tags:
+        - contracts
+      summary: 'Add a new contract to the Database, duplicate contract are not allowed'
+      operationId: addContract
+      requestBody:
+        description: Created contract object
+        content:
+          '*/*':
+            schema:
+              $ref: '#/components/schemas/ContractAdd'
+        required: true
+      responses:
+        default:
+          description: successful operation
+          content: {}
+      x-swagger-router-controller: Contracts
+      x-codegen-request-body-name: body
+    put:
+      tags:
+        - contracts
+      summary: Update an existing contract
+      operationId: updateContract
+      requestBody:
+        description: Update contract status
+        content:
+          '*/*':
+            schema:
+              $ref: '#/components/schemas/ContractUpdate'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/AppiResponse'
+        '400':
+          description: Invalid contract
+          content: {}
+      x-swagger-router-controller: Contracts
+      x-codegen-request-body-name: status
+components: 
+  schemas:
+    Contract:
+       type: object
+       properties: 
+        id: 
+          type: integer
+          format: int64
+        description: 
+          type: string
+        status:
+          type: boolean
+    ContractAdd:
+       type: object
+       properties: 
+        description: 
+          type: string
+        status:
+          type: boolean
+    ContractUpdate:
+      type: object
+      properties: 
+        id: 
+          type: integer
+          format: int64
+    AppiResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        type:
+          type: string
+        message:
+          type: string

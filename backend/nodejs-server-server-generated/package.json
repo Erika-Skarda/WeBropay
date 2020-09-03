@@ -1,0 +1,39 @@
+{
+  "name": "swagger-contracts",
+  "version": "1.0.0",
+  "description": "This is a sample server Contracts server.  You can find out more about     Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).      For this sample, you can use the api key `special-key` to test the authorization     filters.",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "swagger"
+  ],
+  "license": "Unlicense",
+  "private": true,
+  "dependencies": {
+    "connect": "^3.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "js-yaml": "^3.3.0",
+    "knex": "^0.21.5",
+    "oas3-tools": "^2.0.2",
+    "pg": "^8.3.3",
+    "serverless-http": "^2.5.0",
+    "swagger-jsdoc": "^3.4.0",
+    "swagger-ui-express": "^4.0.7",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "jest": "^26.4.2",
+    "serverless-dotenv-plugin": "^3.0.0",
+    "serverless-offline": "^6.7.0",
+    "serverless-webpack": "^5.3.4",
+    "ts-loader": "^8.0.3",
+    "webpack": "^4.44.1",
+    "webpack-node-externals": "^2.5.2"
+  }
+}

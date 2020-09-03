@@ -52,6 +52,7 @@ Replicação feita em React do projeto para avaliação para vaga de desenvolved
 ## Pré-requisitos
 
 :warning: [Npm](https://www.npmjs.com/)
+:warning: [Node](https://nodejs.org/en/download/)
 
 ## Como rodar a aplicação :arrow_forward:
 

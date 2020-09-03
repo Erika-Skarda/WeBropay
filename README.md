@@ -25,7 +25,7 @@
 
 ## Descrição
 
-Replicação feita em React do projeto para avaliação para vaga de desenvolvedor que consiste em: crie um protótipo de uma API que servirá como backend da sua aplicação usando a ferramenta swagger-editor seguindo a especicação openAPI 3.0.   Você deve gerar um servidor com a própria ferramenta em NodeJS.. Crie também umapágina simples usando ReactJS que faça a escrita, leitura e inserção consumindo a API criada anteriormente
+Replicação feita em React do projeto para avaliação para vaga de desenvolvedor que consiste em: crie um protótipo de uma API que servirá como backend da sua aplicação usando a ferramenta swagger-editor seguindo a especicação openAPI 3.0.  Você deve gerar um servidor com a própria ferramenta em NodeJS.Crie também umapágina simples usando ReactJS que faça a escrita, leitura e inserção consumindo a API criada anteriormente
 
 ## Protótipo
 
@@ -69,12 +69,29 @@ Por último, suba a aplicação:
 npm start
 ```
 
-## Linguagens, dependencias e libs utilizadas :books:
+## Linguagens, dependencias e libs utilizadas(FRONTEND) :books:
 
 
 - [React](https://pt-br.reactjs.org/)
 - [Styled Components](https://styled-components.com/)
 - [Material ui](https://material-ui.com/pt/)
+
+## Linguagens, dependencias e libs utilizadas :books:
+
+- [Node](https://nodejs.org/en/)
+- [Swagger](https://swagger.io/)
+- [Javascript](https://www.javascript.com/)
+- [Axios](https://alligator.io/react/axios-react/)
+- [AWS](https://aws.google.com/)
+- [express](https://expressjs.com/)
+- [jwt](https://jwt.io/)
+- [knex](http://knexjs.org/)
+- [moment](https://momentjs.com/docs/)
+- [uuid](https://www.uuidgenerator.net/)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [jest](https://jestjs.io/)
+- [postgres](https://www.npmjs.com/package/postgres)
+- [cors](https://www.npmjs.com/package/cors)
 
 ## Desenvolvido Por :octocat:
 

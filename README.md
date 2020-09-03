@@ -76,7 +76,7 @@ npm start
 - [Styled Components](https://styled-components.com/)
 - [Material ui](https://material-ui.com/pt/)
 
-## Linguagens, dependencias e libs utilizadas :books:
+## Linguagens, dependencias e libs utilizadas(BACKEND) :books:
 
 - [Node](https://nodejs.org/en/)
 - [Swagger](https://swagger.io/)

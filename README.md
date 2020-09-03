@@ -24,7 +24,7 @@
 
 ## Descrição
 
-Replicação feita em React do projeto Eagle da empresa 2T informática
+Replicação feita em React do projeto para avaliação para vaga de desenvolvedor que consiste em: crie um protótipo de uma API que servirá como backend da sua aplicação usando a ferramenta swagger-editor seguindo a especicação openAPI 3.0.   Você deve gerar um servidor com a própria ferramenta em NodeJS.. Crie também umapágina simples usando ReactJS que faça a escrita, leitura e inserção consumindo a API criada anteriormente
 
 ## Protótipo
 
@@ -32,8 +32,9 @@ Replicação feita em React do projeto Eagle da empresa 2T informática
   O protótipo do projeto foi criado em  encontra-se disponivel em: <b>https://xd.adobe.com/view/d4c984d2-2738-4672-9b11-a95a7d6672ee-819a/specs/</b>
 </p>
 
-## Documentação
-https://documenter.getpostman.com/view/10904258/TVCfW8Zp
+## Documentação:book:
+
+<b>[Postman]https://documenter.getpostman.com/view/10904258/TVCfW8Zp</b>
 ## Deploy
 
 <p align="justify">

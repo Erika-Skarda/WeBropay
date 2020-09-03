@@ -2,7 +2,7 @@
 ## Projeto Full Stack
 
 <p align="center" >
-  <img width="20%" src="https://imgur.com/DSmCjNj" />
+  <img width="20%" src="https://imgur.com/fFAgfss" />
 </p>
 
 ## Vídeo :movie_camera:	

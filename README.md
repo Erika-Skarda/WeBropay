@@ -40,6 +40,7 @@ Replicação feita em React do projeto para avaliação para vaga de desenvolved
 ## Documentação:book:
 
 <b>[Postman](https://documenter.getpostman.com/view/10904258/TVCfW8Zp)</b>
+<b>[Swagger](https://editor.swagger.io/?_ga=2.268075022.1023653597.1598834335-484361554.1598639607)</b>
 
 ## Endpoints:
 

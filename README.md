@@ -34,11 +34,18 @@ Replicação feita em React do projeto para avaliação para vaga de desenvolved
 
 ## Documentação:book:
 
-<b>[Postman]https://documenter.getpostman.com/view/10904258/TVCfW8Zp</b>
+<b>[Postman](https://documenter.getpostman.com/view/10904258/TVCfW8Zp)</b>
+
+## Endpoints:
+
+:white_check_mark: <b> 1. Criar novo </br></br>
+:white_check_mark: <b> 2. Ver todos os cadastros</br></br>
+:white_check_mark: <b> 3. Atualizar cadastro </br></br>
+
 ## Deploy
 
 <p align="justify">
-  O deploy do projeto foi realizado no surge e encontra-se disponivel em: <b><a target="blank href="organic-trouble.surge.sh">elfin-protest.surge.sh</a></b>
+  O deploy do projeto foi realizado no surge e encontra-se disponivel em: <b><a target="blank href="organic-trouble.surge.sh"</a></b>
 </p>
 
 ## Pré-requisitos

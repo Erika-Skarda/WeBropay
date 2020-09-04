@@ -38,16 +38,16 @@ class CustomizedTablesClients extends Component {
          {allContracts.map((row, index) => (
             <StyledTableRow  key={row.index}>
               {(row.id).toString().length === 1 ? 
-              (<StyledTableCell2 width="20%" component="th" scope="row">
+              (<StyledTableCell2 width="25%" component="th" scope="row">
                CTT-0000000000{row.id} </StyledTableCell2>)
-               : (<StyledTableCell2 width="20%" component="th" scope="row">
+               : (<StyledTableCell2 width="25%" component="th" scope="row">
                CTT-00000000{row.id} </StyledTableCell2>)
               }
-              <StyledTableCell2 width="50%" align="left">{row.description}</StyledTableCell2>
+              <StyledTableCell2 width="40%" align="left">{row.description}</StyledTableCell2>
               {row.status ? 
-                (<StyledTableCell2 width="20%" align="left">Contrato aberto</StyledTableCell2>
+                (<StyledTableCell2 width="25%" align="left">Contrato aberto</StyledTableCell2>
               ) : (
-                <StyledTableCell2  width="20%" align="left">Contrato distrato</StyledTableCell2>
+                <StyledTableCell2  width="25%" align="left">Contrato distrato</StyledTableCell2>
               )}
               <StyledTableCell2 align="left">
                 <PencilnIcon  onClick={() => updateContract(row.id)} />

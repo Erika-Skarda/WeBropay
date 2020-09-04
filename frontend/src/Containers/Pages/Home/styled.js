@@ -16,6 +16,11 @@ export const Title = styled.div`
   display: flex;  
   flex-direction: row;
   padding:20px 0 0 0;
+    @media screen and (max-width: 650px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
 
     h1 {
         top: 204px;

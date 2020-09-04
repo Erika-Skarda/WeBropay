@@ -36,7 +36,7 @@ export const StyledTableCell2 = styled(TableCell) `
   && {
     color:inherit;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.95rem;
     width:${(props) => props.width};
     
   } 
@@ -44,7 +44,7 @@ export const StyledTableCell2 = styled(TableCell) `
 `
 export const StyledTable = withStyles((theme) => ({
   root: {
-    width: "75%",
+    width: "85%",
     display: "table",
     marginTop: "35px",
     border: "1px solid #E5E5E5",

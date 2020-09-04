@@ -2,7 +2,6 @@
 const express = require('express');
 const cors = require('cors')
 
-
 'use strict';
 
 var path = require('path');
@@ -20,12 +19,17 @@ var expressAppConfig = oas3Tools.expressAppConfig(path.join(__dirname, 'api/open
 expressAppConfig.addValidator();
 var app = expressAppConfig.getApp();
 
+
 app.use(cors({ origin: true}))
 app.use(express.json())
 
 // Initialize the Swagger middleware
+if(process.env.NODE_ENV !== "serveless") {
 http.createServer(app).listen(serverPort, function () {
     console.log('Your server is listening on port %d (http://localhost:%d)', serverPort, serverPort);
     console.log('Swagger-ui is available on http://localhost:%d/docs', serverPort);
 });
 
+}
+
+//https://5atloqntqe.execute-api.us-east-1.amazonaws.com/dev

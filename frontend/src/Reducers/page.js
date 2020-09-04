@@ -4,7 +4,7 @@ const initialState = {
 const page = (state = initialState, action) => {
 
   switch (action.type) {
-      case "SSET_CURRENT_PAGE":
+      case "SET_CURRENT_PAGE":
           return {
               ...state,
               currentPage: action.payload.currentPage

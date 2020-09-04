@@ -77,10 +77,19 @@ Entre no projeto e instale as dependências através do comando:
 ```
 npm install
 ```
-Por último, suba a aplicação: 
+Suba a aplicação e na pasta backend:
+```
+cd nodejs-server-server-generated
+```
+Rode o comando:
+```
+node index.js
+```
+Suba a aplicação e na pasta frontend:
 ```
 npm start
 ```
+
 
 ## Linguagens, dependencias e libs utilizadas(FRONTEND) :books:
 
@@ -88,6 +97,8 @@ npm start
 - [React](https://pt-br.reactjs.org/)
 - [Styled Components](https://styled-components.com/)
 - [Material ui](https://material-ui.com/pt/)
+- [Redux](https://redux.js.org/)
+- [Hooks](https://reactjs.org/docs/hooks-intro.html)
 
 ## Linguagens, dependencias e libs utilizadas(BACKEND) :books:
 

@@ -34,7 +34,7 @@ Replicação feita em React do projeto para avaliação para vaga de desenvolved
 ## Protótipo
 
 <p align="justify">
-  O protótipo do projeto foi criado em  encontra-se disponivel em: <b>https://xd.adobe.com/view/d4c984d2-2738-4672-9b11-a95a7d6672ee-819a/specs/</b>
+  O protótipo do projeto foi criado em xd.adobe encontra-se disponivel em: <b>https://xd.adobe.com/view/d4c984d2-2738-4672-9b11-a95a7d6672ee-819a/specs/</b>
 </p>
 
 ## Documentação:book:
@@ -48,11 +48,18 @@ Replicação feita em React do projeto para avaliação para vaga de desenvolved
 :white_check_mark: <b> 2. Ver todos os cadastros</br></br>
 :white_check_mark: <b> 3. Atualizar cadastro </br></br>
 
-## Deploy
+## Deploy (BACKEND):dash:
 
 <p align="justify">
-  O deploy do projeto foi realizado no surge e encontra-se disponivel em: <b><a target="blank href="organic-trouble.surge.sh"</a></b>
+  O deploy do projeto foi realizado pela AWS e encontra-se disponivel em: <b><a target="blank href="organic-trouble.surge.sh"</a>https://5atloqntqe.execute-api.us-east-1.amazonaws.com/dev/</b>
 </p>
+    
+## Deploy (FRONTEND):dash:
+
+<p align="justify">
+  O deploy do projeto foi realizado pelo VERCEL e encontra-se disponivel em: <b><a target="blank href="organic-trouble.surge.sh"</a>https://webropay.vercel.app/home</b>
+</p>
+
 
 ## Pré-requisitos
 
@@ -70,10 +77,19 @@ Entre no projeto e instale as dependências através do comando:
 ```
 npm install
 ```
-Por último, suba a aplicação: 
+Suba a aplicação e na pasta backend:
+```
+cd nodejs-server-server-generated
+```
+Rode o comando:
+```
+node index.js
+```
+Suba a aplicação e na pasta frontend:
 ```
 npm start
 ```
+
 
 ## Linguagens, dependencias e libs utilizadas(FRONTEND) :books:
 
@@ -81,6 +97,8 @@ npm start
 - [React](https://pt-br.reactjs.org/)
 - [Styled Components](https://styled-components.com/)
 - [Material ui](https://material-ui.com/pt/)
+- [Redux](https://redux.js.org/)
+- [Hooks](https://reactjs.org/docs/hooks-intro.html)
 
 ## Linguagens, dependencias e libs utilizadas(BACKEND) :books:
 

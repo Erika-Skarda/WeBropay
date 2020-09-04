@@ -34,7 +34,7 @@ Replicação feita em React do projeto para avaliação para vaga de desenvolved
 ## Protótipo
 
 <p align="justify">
-  O protótipo do projeto foi criado em  encontra-se disponivel em: <b>https://xd.adobe.com/view/d4c984d2-2738-4672-9b11-a95a7d6672ee-819a/specs/</b>
+  O protótipo do projeto foi criado em xd.adobe encontra-se disponivel em: <b>https://xd.adobe.com/view/d4c984d2-2738-4672-9b11-a95a7d6672ee-819a/specs/</b>
 </p>
 
 ## Documentação:book:

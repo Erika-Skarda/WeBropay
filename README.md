@@ -48,7 +48,7 @@ Replicação feita em React do projeto para avaliação para vaga de desenvolved
 :white_check_mark: <b> 2. Ver todos os cadastros</br></br>
 :white_check_mark: <b> 3. Atualizar cadastro </br></br>
 
-## Deploy (BACKEND)
+## Deploy (BACKEND):dash:
 
 <p align="justify">
   O deploy do projeto foi realizado pela AWS e encontra-se disponivel em: <b><a target="blank href="organic-trouble.surge.sh"</a>https://5atloqntqe.execute-api.us-east-1.amazonaws.com/dev/</b>

@@ -53,6 +53,13 @@ Replicação feita em React do projeto para avaliação para vaga de desenvolved
 <p align="justify">
   O deploy do projeto foi realizado pela AWS e encontra-se disponivel em: <b><a target="blank href="organic-trouble.surge.sh"</a>https://5atloqntqe.execute-api.us-east-1.amazonaws.com/dev/</b>
 </p>
+    
+## Deploy (FRONTEND):dash:
+
+<p align="justify">
+  O deploy do projeto foi realizado pelo VERCEL e encontra-se disponivel em: <b><a target="blank href="organic-trouble.surge.sh"</a>https://webropay.vercel.app/home</b>
+</p>
+
 
 ## Pré-requisitos
 

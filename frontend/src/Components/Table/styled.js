@@ -44,7 +44,7 @@ export const StyledTableCell2 = styled(TableCell) `
 `
 export const StyledTable = withStyles((theme) => ({
   root: {
-    width: "70%",
+    width: "75%",
     display: "table",
     marginTop: "35px",
     border: "1px solid #E5E5E5",

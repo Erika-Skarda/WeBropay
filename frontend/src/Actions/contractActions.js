@@ -31,12 +31,13 @@ export const addContract = (description, status) => async (dispatch) => {
  
   }
 };
-export const getAllContracts = (page) => async (dispatch) => {
+export const getAllContracts = () => async (dispatch) => {
   try {
     
     const response = await axios.get(`${baseUrl}/contract`)  
     dispatch(setAllContracts(response.data))
-   console.log(response.data)
+
+    console.log(response.data)
   } catch (err) {
     
   console.log("Algo errado não está certo!")

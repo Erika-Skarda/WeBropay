@@ -20,10 +20,10 @@ class CustomizedTablesClients extends Component {
     this.props.getAllContracts()
     // this.props.setCurrentPage(1)
   }
- render() {
+  render() {
 
    const {allContracts, updateContract} = this.props;
-   console.log(allContracts)
+  
   return (
       <StyledTable aria-label="customized table">
         <TableHead>
@@ -61,13 +61,12 @@ class CustomizedTablesClients extends Component {
 }
 const mapStateToProps = state => {
   return {
-
     allContracts: state.contract.allContracts
- 
-  };
+  }
 }
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch) => 
     bindActionCreators(contractAction,dispatch)
-    bindActionCreators(pageAction,dispatch)
-}
-export default connect(mapStateToProps,mapDispatchToProps)(CustomizedTablesClients)
+
+
+export default connect(mapStateToProps,mapDispatchToProps)
+(CustomizedTablesClients)

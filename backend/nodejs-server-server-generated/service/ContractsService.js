@@ -1,13 +1,6 @@
 'use strict';
 const knex = require('./database');
 
-
-/**
- * Add a new contract to the Database
- *
- * body Contract Contract object 
- * no response value expected for this operation
- **/
 exports.addContract = async function(body) {
   try {
     const result = await knex.raw(`
@@ -31,37 +24,23 @@ exports.addContract = async function(body) {
     throw new Error("Problems")
   }
 }
-/**
- * Finds all contracts
- *
- * returns List
- **/
+
 exports.getAllContracts = async function(req) {
  
   // try {
-  //   const result = await knex.raw(`
-  //     SELECT  *
-  //     FROM "contracts"
-  //  `);
-  //   console.log(result)
+  //    const result = await knex.raw(`
+  //      SELECT  *
+  //      FROM "contracts"
+  //   `);
     
   //   return result.rows.map((contract) => contract)
 
-  try {
-    let id = await knex.raw(`
-    SELECT *
-    FROM "contracts"
-    `);
-    
-    const arrayId = id.rows.map((contract) => contract.id) 
-    console.log(arrayId)
-  
+   try {
 
-    const postsPerPage = 10;
+    const postsPerPage = 20;
     const newPage = req.query.page >=1 ? req.query.page : 1;
     let offset =  postsPerPage * (newPage - 1); 
    
-
     const result = await knex("contracts")
       .select("*")
       .orderBy('id', 'desc')
@@ -75,12 +54,7 @@ exports.getAllContracts = async function(req) {
     throw new Error("Contracts not found")
   }
 }
-/**
- * Update an existing contract
- *
- * body Contract Contract object that needs to be added to the database
- * no response value expected for this operation
- **/
+
 exports.updateContract = async function(req) {
  
   try {

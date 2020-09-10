@@ -2,13 +2,14 @@
 const express = require('express');
 const cors = require('cors')
 
+const dotenv = require('dotenv');
 'use strict';
 
 var path = require('path');
 var http = require('http');
 
 var oas3Tools = require('oas3-tools');
-var serverPort = 8080;
+var serverPort = (process.env.DB_PORT || "8080");
 
 // swaggerRouter configuration
 var options = {

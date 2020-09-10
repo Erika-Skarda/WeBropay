@@ -11,13 +11,6 @@
       "runtime": "nodejs12.x",
       "region": "us-east-1",
       "versionFunctions": true,
-      "environment": {
-        "DB_HOST": "webropay.czeruqgah1kf.us-east-1.rds.amazonaws.com",
-        "DB_PORT": "5432",
-        "DB_USER": "candidate01",
-        "DB_PASSWORD": "webropay",
-        "DB_DATABASE": "webropay"
-      },
       "compiledCloudFormationTemplate": {
         "AWSTemplateFormatVersion": "2010-09-09",
         "Description": "The AWS CloudFormation template for this Serverless application",
@@ -166,7 +159,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/webropay/dev/1599248819452-2020-09-04T19:46:59.452Z/webropay.zip"
+                "S3Key": "serverless/webropay/dev/1599520692086-2020-09-07T23:18:12.086Z/webropay.zip"
               },
               "FunctionName": "webropay-dev-app",
               "Handler": "./lambda.handler",
@@ -178,29 +171,20 @@
                 ]
               },
               "Runtime": "nodejs12.x",
-              "Timeout": 6,
-              "Environment": {
-                "Variables": {
-                  "DB_HOST": "webropay.czeruqgah1kf.us-east-1.rds.amazonaws.com",
-                  "DB_PORT": "5432",
-                  "DB_USER": "candidate01",
-                  "DB_PASSWORD": "webropay",
-                  "DB_DATABASE": "webropay"
-                }
-              }
+              "Timeout": 6
             },
             "DependsOn": [
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersionxxfYVCnDCQZKbaRH9w8C4YHGlN5eUPJbr5OfOpc3uCQ": {
+          "AppLambdaVersionJmyEUBGzmEr8Tv8wTotWVzm7tvaWrFRnCXp5XcNHg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "G9jgOGNjJ8jdp4zxSQpVrmeMzXQrM9kqpijJjz+8GeU="
+              "CodeSha256": "0pjgwpnOTpuWjweUNBCkhFXUX7elf9lyrZ4Y0YPVLZQ="
             }
           },
           "ApiGatewayRestApi": {
@@ -319,7 +303,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1599248554884": {
+          "ApiGatewayDeployment1599520452590": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -379,7 +363,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersionxxfYVCnDCQZKbaRH9w8C4YHGlN5eUPJbr5OfOpc3uCQ"
+              "Ref": "AppLambdaVersionJmyEUBGzmEr8Tv8wTotWVzm7tvaWrFRnCXp5XcNHg"
             }
           },
           "ServiceEndpoint": {
@@ -476,18 +460,6 @@
       },
       "vpc": {}
     },
-    "custom": {
-      "webpack": {
-        "webpackConfig": "webpack.config.js",
-        "packager": "npm",
-        "includeModules": true
-      }
-    },
-    "plugins": [
-      "serverless-offline",
-      "serverless-webpack",
-      "serverless-dotenv-plugin"
-    ],
     "pluginsData": {},
     "functions": {
       "app": {
@@ -504,23 +476,18 @@
           }
         ],
         "name": "webropay-dev-app",
-        "package": {
-          "artifact": ".serverless\\webropay.zip"
-        },
+        "package": {},
         "memory": 1024,
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersionxxfYVCnDCQZKbaRH9w8C4YHGlN5eUPJbr5OfOpc3uCQ"
+        "versionLogicalId": "AppLambdaVersionJmyEUBGzmEr8Tv8wTotWVzm7tvaWrFRnCXp5XcNHg"
       }
     },
     "configValidationMode": "warn",
     "serviceFilename": "serverless.yaml",
     "layers": {},
     "initialServerlessConfig": {
-      "plugins": {
-        "$ref": "$[\"service\"][\"plugins\"]"
-      },
       "service": "webropay",
       "provider": {
         "name": "aws",
@@ -528,17 +495,15 @@
         "stage": "dev",
         "region": "us-east-1"
       },
-      "custom": {
-        "$ref": "$[\"service\"][\"custom\"]"
-      },
       "functions": {
         "$ref": "$[\"service\"][\"functions\"]"
       }
     },
-    "isDashboardMonitoringPreconfigured": false
+    "isDashboardMonitoringPreconfigured": false,
+    "artifact": "C:\\Users\\Mateus\\Desktop\\Future4\\repositoriosGit\\webbropay\\Projeto-webropay\\backend\\nodejs-server-server-generated\\.serverless\\webropay.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/webropay/dev/1599248819452-2020-09-04T19:46:59.452Z",
-    "artifact": ""
+    "artifactDirectoryName": "serverless/webropay/dev/1599520692086-2020-09-07T23:18:12.086Z",
+    "artifact": "webropay.zip"
   }
 }

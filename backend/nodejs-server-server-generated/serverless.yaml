@@ -1,7 +1,7 @@
-plugins:
-  - serverless-offline
-  - serverless-webpack
-  - serverless-dotenv-plugin
+# plugins:
+#   - serverless-offline
+#   # - serverless-webpack
+#   - serverless-dotenv-plugin
 
 service: webropay
 
@@ -11,11 +11,11 @@ provider:
   stage: dev 
   region: us-east-1 
 
-custom:
-  webpack:
-    webpackConfig: webpack.config.js
-    packager: "npm"
-    includeModules: true 
+# custom:
+#   webpack:
+#     webpackConfig: webpack.config.js
+#     packager: "npm"
+#     includeModules: true 
 
 functions:
   app:

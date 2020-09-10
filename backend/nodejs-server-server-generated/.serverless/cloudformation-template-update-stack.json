@@ -146,7 +146,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/webropay/dev/1599248819452-2020-09-04T19:46:59.452Z/webropay.zip"
+          "S3Key": "serverless/webropay/dev/1599520692086-2020-09-07T23:18:12.086Z/webropay.zip"
         },
         "FunctionName": "webropay-dev-app",
         "Handler": "./lambda.handler",
@@ -158,29 +158,20 @@
           ]
         },
         "Runtime": "nodejs12.x",
-        "Timeout": 6,
-        "Environment": {
-          "Variables": {
-            "DB_HOST": "webropay.czeruqgah1kf.us-east-1.rds.amazonaws.com",
-            "DB_PORT": "5432",
-            "DB_USER": "candidate01",
-            "DB_PASSWORD": "webropay",
-            "DB_DATABASE": "webropay"
-          }
-        }
+        "Timeout": 6
       },
       "DependsOn": [
         "AppLogGroup"
       ]
     },
-    "AppLambdaVersionxxfYVCnDCQZKbaRH9w8C4YHGlN5eUPJbr5OfOpc3uCQ": {
+    "AppLambdaVersionJmyEUBGzmEr8Tv8wTotWVzm7tvaWrFRnCXp5XcNHg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AppLambdaFunction"
         },
-        "CodeSha256": "G9jgOGNjJ8jdp4zxSQpVrmeMzXQrM9kqpijJjz+8GeU="
+        "CodeSha256": "0pjgwpnOTpuWjweUNBCkhFXUX7elf9lyrZ4Y0YPVLZQ="
       }
     },
     "ApiGatewayRestApi": {
@@ -299,7 +290,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1599248554884": {
+    "ApiGatewayDeployment1599520452590": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -359,7 +350,7 @@
     "AppLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AppLambdaVersionxxfYVCnDCQZKbaRH9w8C4YHGlN5eUPJbr5OfOpc3uCQ"
+        "Ref": "AppLambdaVersionJmyEUBGzmEr8Tv8wTotWVzm7tvaWrFRnCXp5XcNHg"
       }
     },
     "ServiceEndpoint": {

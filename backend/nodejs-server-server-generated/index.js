@@ -31,5 +31,12 @@ http.createServer(app).listen(serverPort, function () {
 });
 
 }
+const bodyParser = require('body-parser');
 
+app.engine('html', require('ejs').renderFile);
+app.set('view engine', 'html');
+app.set('views', 'views');
+
+
+app.use(bodyParser.urlencoded({ extended: true }));
 //https://5atloqntqe.execute-api.us-east-1.amazonaws.com/dev
